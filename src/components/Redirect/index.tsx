@@ -15,13 +15,15 @@ export const Redirect = () => {
     }, 1000);
 
     if (time <= 0) {
-      navigate('/');
+      navigate('/about', {
+        state:`This is the State: ${Math.random()}`,
+      });
     }
 
     return () => {
       clearTimeout(timeout.current);
     };
-    
+
   },[time]);
 
   return (

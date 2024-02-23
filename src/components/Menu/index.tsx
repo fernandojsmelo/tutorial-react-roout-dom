@@ -10,7 +10,7 @@ export const Menu = () => {
       </li>
       
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about" state={'this is state from Home'}>About</Link>
       </li>
       
       <li>
